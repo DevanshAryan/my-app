@@ -20,7 +20,7 @@ export const Primary = {
 
 export const Secondary = {
   args: {
-    label: 'Button',
+    label: 'Button new version',
   },
 };
 
