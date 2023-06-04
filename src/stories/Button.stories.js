@@ -14,13 +14,13 @@ export default {
 export const Primary = {
   args: {
     primary: true,
-    label: 'Button',
+    label: 'Hellow nwduwdbshdsdjksd',
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Button new version',
+    label: 'Button',
   },
 };
 
