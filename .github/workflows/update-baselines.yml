@@ -19,11 +19,17 @@ jobs:
       - name: Build Storybook
         run: npm run build-storybook
 
+      - name: Install Playwright
+        run : npx playwright install
+
       - name: Lost Pixel
         id: lp
         uses: lost-pixel/lost-pixel@v3.4.1
-        env:
-          LOST_PIXEL_MODE: update
+        # # env:
+        # #   LOST_PIXEL_MODE: update
+      - name: update baseline
+        run: npm run lost-pixel-update
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         if: ${{ failure() && steps.lp.conclusion == 'failure' }}
