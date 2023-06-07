@@ -14,7 +14,7 @@ export default {
 export const Primary = {
   args: {
     primary: true,
-    label: 'Button',
+    label: 'Hellow nwduwdbshdsdjksd',
   },
 };
 
@@ -27,7 +27,7 @@ export const Secondary = {
 export const Large = {
   args: {
     size: 'large',
-    label: 'Button Large',
+    label: 'Button',
   },
 };
 
