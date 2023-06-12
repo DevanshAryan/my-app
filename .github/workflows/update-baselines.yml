@@ -34,7 +34,7 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: update lost-pixel baselines
-          delete-branch: false
-          branch: 'DevanshAryan-patch-1'
+          delete-branch: true
+          branch: 'lost pixel update-${{github.ref_name}}'
           title: 'Lost Pixel update - DevanshAryan-patch-1'
           body: Automated baseline update PR created by Lost Pixel
