@@ -24,7 +24,7 @@ jobs:
 
       - name: Lost Pixel
         id: lp
-        run: npm lost-pixel-update
+        run: npm run lost-pixel-update
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
