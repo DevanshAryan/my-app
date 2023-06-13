@@ -23,6 +23,7 @@ jobs:
         uses: lost-pixel/lost-pixel@v3.4.1
         
       - uses: actions/upload-artifact@v3
+        if : always()
         with:
          name: lost-pixel-artefacts
          path: .lostpixel
