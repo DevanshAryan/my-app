@@ -29,6 +29,4 @@ RUN rm lostpixel.config.ts
 
 COPY dockerdata.txt ./lostpixel.config.ts
 
-RUN yarn build-storybook
-
-CMD yarn lost-pixel
+CMD yarn build-storybook && yarn lost-pixel
