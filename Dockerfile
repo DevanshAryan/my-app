@@ -25,8 +25,8 @@ RUN npx playwright install-deps
 
 COPY . .
 
-RUN rm lostpixel.config.ts
-
-COPY dockerdata.txt ./lostpixel.config.ts
-
 CMD yarn build-storybook && yarn lost-pixel
+
+# if you want to update baseline just un-comment this part and comment the above command
+
+# CMD yarn build-storybook && yarn lost-pixel update
